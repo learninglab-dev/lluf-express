@@ -12,6 +12,7 @@
     type = "text/java"
     href = "script.js" />
   <title>AboutUs</title>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 </head>
 
@@ -23,10 +24,10 @@
 
    <div class="box box1">
      <ul>
-       <li><a class="active" href="./../home/index.html">Home</a></li>
+       <li><a href="./../home/index.html">Home</a></li>
        <li><a href="./../fellows/index.html">Fellows</a></li>
        <li><a href="./../portal/index.html">Portal</a></li>
-       <li><a href="./../aboutus/index.html">About Us</a></li>
+       <li><a class="active" href="./../aboutus/index.html">About Us</a></li>
        <li>
           <div class="box box9">
             <div class="topnav">
@@ -48,7 +49,13 @@
   </div>
 
 
-  <div class="box box3"></div>
+  <div class="box box3">
+   <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+  </div>
 
   <div class="box box4"></div>
 
@@ -58,41 +65,51 @@
 
         <div class="box box6">
           <h1>What We Do</h1>
-          <!-- <h2>Examples of current and past projects:</h2> -->
-          <p>Examples of current and past projects:
-            <ol>
-           <div><li>Experiencing and improving tutorials on HTML, CSS, GitHub, and Javascript</li>
-           <div><li>Writing, filming, and editing a music video to showcase the LLUFs and our work</li>
-           <div><li>Practing photography with professional cameras</li>
-           <div><li>Learning Adobe Photoshop and Illustrator to improve photos we've taken</li>
-           <div><li>Developing and designing this website!</li>
-           </ol>
-          </p>
+          <p>Examples of current and past projects include workshopping tutorials on HTML, CSS, GitHub, and Javascript, creating a music video to showcase the LLUFs and our work, practing photography with professional cameras and learning Adobe Suite to improve photos we've taken, and developing this website!          </p>
          </div>
 
              <div class= "box box7">
                 <h1>Who We Are</h1>
                 <p>LLUFs are undergraduates who use their skills and experiences as students to provide feedback and guidance on developing projects at the Bok Center! We also work on independent projects to better equip ourselves for work at the Learning Lab.</p>
             </div>
+             
+             <div class= "box box8">
+                 <h1>Some Examples of LLUFs in Action:</h1>
 
-             <div class="box box8">
-                   <h1>What We Do</h1>
-                   <h2>Here are some examples of current and past projects:</h2>
-                   <p>
-                  <div class= "listgrid">
-                    <ol>
-                    <div>  <li>Experiencing and improving tutorials on HTML, CSS, GitHub, and Javascript</li>
-                    <div>  <li>Writing, filming, and editing a music video to showcase the LLUFs and our work</li>
-                    <div>  <li>Practing photography with professional cameras</li>
-                    <div>  <li>Learning Adobe Photoshop and Illustrator to improve photos we've taken</li>
-                    <div>  <li>Developing and designing this website!</li>
-                    </ol>
-                  </div>
-             </div>
+                    <div class="w3-content w3-display-container">
+                      <img class="mySlides" src="singing.jpg" style="width:100%">
+                      <img class="mySlides" src="llufcollage.jpg" style="width:100%">
+                      <img class="mySlides" src="albumcovers.jpg" style="width:100%">
+                      <img class="mySlides" src="unconscious_collage.jpg" style="width:100%">
+                    
+                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+                    </script>
 
       </div>
+      
   </div>
-
+</div>
 </div>
 </div>
 </div>

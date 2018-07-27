@@ -227,3 +227,10 @@ img {
 .title{
   padding-left: 120px;
 }
+body {
+padding: 0;
+margin: 0;
+}
+#Thetitle{font-family: 'PT Sans', cursive;
+font-weight: bold;
+}

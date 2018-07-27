@@ -224,3 +224,8 @@ profile{
 .head a{float: right;}
 .profile img{width: 100px;float: left;margin: 0px 10px 10px 0px;}
 .proDetails{float: left;}
+
+body {
+padding: 0;
+margin: 0;
+}
