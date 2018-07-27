@@ -234,3 +234,15 @@ margin: 0;
 #Thetitle{font-family: 'PT Sans', cursive;
 font-weight: bold;
 }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
